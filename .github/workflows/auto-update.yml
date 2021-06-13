@@ -5,6 +5,7 @@ on:
     - cron: '0 0 * * *'
 jobs:
   remove-duplicates:
+    if: github.repository_owner == 'iptv-org'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
